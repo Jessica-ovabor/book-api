@@ -43,10 +43,10 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#deliverables">Deliverables</a></li>
-        <li><a href="#components">Components</a></li>
+        <li><a href="#component">Components</a></li>
         <li><a href="#usage">Usage</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#endpoints">Endpoint</a></li>
+        <li><a href="endpoints-for-the-book-api">Endpoint</a></li>
         <li><a href="#license">License/a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -145,11 +145,10 @@ To explore and use this API, follow these steps:
     <li>Run the application:</li>
 </ul>
 
-### To create a virtual environment called 'env' and activate it.
+### To activate a virtual environment called 'bookenv'.
 
 ```console
-python -m venv env
-env/Scripts/Activate
+bookenv/Scripts/Activate
 ```
 
 **Note:** Make sure the `requirement.txt` file is present
