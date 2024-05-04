@@ -231,5 +231,6 @@ Project Link: [Book Api](https://github.com/Jessica-ovabor/book-api)
 [twitter-url]: https://twitter.com/jovabor
 
 [python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 
 [sqlite]: https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white!(https://user-images.githubusercontent.com/74324460/226195821-80565e9c-bc4a-450b-8f5f-aa2e4535ba83.png)
