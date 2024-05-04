@@ -6,7 +6,6 @@
 
   [![Contributors][contributors-shield]][contributors-url]
   [![Forks][forks-shield]][forks-url]
-  [![Stargazers][stars-shield]][stars-url]
   [![Issues][issues-shield]][issues-url]
   [![MIT License][license-shield]][license-url]
   [![Twitter][twitter-shield]][twitter-url]
@@ -66,7 +65,7 @@ This Book Api was built with FAST Api by <a href="https://www.github.com/Jessica
 ### Built With:
 
 ![Python][python]
-![FastApi][fastapi]
+![FASTApi][fastapi]
 ![SQLite][sqlite]
 
 
@@ -224,9 +223,8 @@ Project Link: [Book Api](https://github.com/Jessica-ovabor/book-api)
 [contributors-url]: https://github.com/Oluwatemmy/Student-Management-API/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Oluwatemmy/Student-Management-API.svg?style=for-the-badge
 [forks-url]: https://github.com/Oluwatemmy/Student-Management-API/network/members
-[stars-url]: https://github.com/Oluwatemmy/book-api/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Jessica-ovabor/JessiSchool.svg?style=for-the-badge
-[issues-url]: https://github.com/Jessica-ovabor/JessiSchool/issues
+[issues-url]: https://github.com/Jessica-ovabor/BOOK-API/issues
 [license-shield]: https://img.shields.io/github/license/Jessica-ovabor/JessiSchool.svg?style=for-the-badge
 [license-url]: https://github.com/Jessica-ovabor/JessiSchool-API/blob/main/LICENSE
 [twitter-shield]: https://img.shields.io/badge/-@jovabor-1ca0f1?style=for-the-badge&logo=twitter&logoColor=white&link=https://twitter.com/ze_austin
