@@ -45,14 +45,17 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#technology">Technology</a></li>
+
     <li><a href="#project-scope">Project Scope</a></li>
+    <li><a href="#built-with">Technology</a></li>
+    <li><a href="#deliverables">Deliverables</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#installaton">Installation</a></li>
-    <li><a href="#sample">Sample</a></li>
+    <li><a href="#component">Component</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+
   </ol>
   <p align="right"><a href="#readme-top">back to top</a></p>
 </details>
@@ -73,7 +76,7 @@ This Book Api was built with FAST Api by <a href="https://www.github.com/Jessica
 ### Built With:
 
 ![Python][python]
-![FastAPI][fastapi]
+![FastMApi][fastapi]
 ![SQLite][sqlite]
 
 
@@ -83,7 +86,7 @@ This Book Api was built with FAST Api by <a href="https://www.github.com/Jessica
 <!-- Lessons from the Project -->
 ## Deliverables
 
-Creating this API helped me learn and practice:
+Creating this API:
 * API Development with FAST Api
 * Unit Testing using Postman
 * Routing
@@ -96,7 +99,7 @@ Creating this API helped me learn and practice:
 
 ---
 <!-- What the API can do -->
-## Project Scope
+## Component
 
 The Book API handles the following:
 * Create a new book
@@ -114,10 +117,10 @@ The Book API handles the following:
 
 To explore and use this API, follow these steps:
 
-1. Open the web app on your browser: https://githu.com/Jessica-ovabor/book-api
+1. After cloning and making sure the app is running click on the url and add / docs to it : example (http://127.0.0.1:8000/docs)
 
-2. Create an  account:
-   - Click 'auth' to reveal a dropdown menu of the authentication routes, then register an admin account via the '/auth/register/admin' route. Input your details and a type 'admin' will be assigned. to create an admin account.
+2. Create a new book:
+   - Click '/create/books' to reveal a dropdown menu of the authentication routes, then register an admin account via the '/auth/register/admin' route. Input your details and a type 'admin' will be assigned. to create an admin account.
  Create a student account:
    - Click 'student' to reveal a dropdown menu of the authentication routes, then register an admin account via the '/student/register' route. Input your details and a type 'student' will be assigned.
   
@@ -160,7 +163,7 @@ To explore and use this API, follow these steps:
     <li>Clone the repository to your local machine.</li>
     <li>Navigate to the project directory.</li>
     <li>Create a virtual environment and activate it:</li>
-    <li>Open the requirements.txt file amd remove the uwsgi package</li>
+    <li>Open the requirements.txt file</li>
     <li>Install the dependencies:</li>
     <li>Run the application:</li>
 </ul>
@@ -172,7 +175,7 @@ python -m venv env
 env/Scripts/Activate
 ```
 
-**Note:** Open the requirements.txt file and remove the uwsgi package which is also the last package. It is likely for you to run into an error if you don't remove it because this is the dyno used to run the app on pythonanywhere and will not work on your local machine. After doing this, you can go ahead and install the rest with this command. 
+**Note:** Make sure the `requirement.txt` file is present
 
 ```console
 pip install -r requirements.txt
@@ -181,27 +184,19 @@ pip install -r requirements.txt
 ### To create your database locally.
 
 ```console
-flask shell     # press enter
-db              # press enter
-User            # press enter
-Admin           # press enter
-Student         # press enter
-Course          # press enter
-StudentCourse   # press enter
-Score           # press enter
-db.create_all() # press enter
-exit()          # press enter
+run `utils.py` 
+
 ```
 
 ### Finally, To run the application.
 
 ```console
-python runserver.py
+uvicorn app:app --reload 
 ```
 
-# Endpoints for the Student Management API
+# Endpoints for the Book  API
 
-<div style="margin-top:8px; margin-bottom:10px; font-size:20px; font-weight:bold;">Auth EndPoint For Admin</div>
+<div style="margin-top:8px; margin-bottom:10px; font-size:20px; font-weight:bold;">Book Api Endpoints</div>
 <!-- Tables for routing in each models -->
 
 | ROUTE                          | METHOD | DESCRIPTION                                   | AUTHORIZATION          | USER TYPE |
@@ -228,7 +223,7 @@ python runserver.py
 <!-- License -->
 ## License
 
-Distributed under the MIT License. See <a href="https://github.com/Jessica-ovabor/JessiSchoolblob/main/LICENSE">LICENSE</a> for more information.
+Distributed under the MIT License. See <a href="https://github.com/Jessica-ovabor/book-apiblob/main/LICENSE">LICENSE</a> for more information.
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -268,5 +263,5 @@ Project Link: [JessiSchool](https://github.com/Jessica-ovabor/book-api)
 [twitter-url]: https://twitter.com/jovabor
 
 [python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
-[flask]: https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white
+
 [sqlite]: https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white!(https://user-images.githubusercontent.com/74324460/226195821-80565e9c-bc4a-450b-8f5f-aa2e4535ba83.png)
