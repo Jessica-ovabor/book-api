@@ -217,7 +217,7 @@ You can contact me with my social media handles:
 
 [LinkedIn](https://www.linkedin.com/in/jovabor) | [Twitter](https://twitter.com/jovabor) | [Github](https://github.com/Jessica-ovabor) | Email: ovaborjessica85@gmail.com
 
-Project Link: [JessiSchool](https://github.com/Jessica-ovabor/book-api)
+Project Link: [Book Api](https://github.com/Jessica-ovabor/book-api)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
