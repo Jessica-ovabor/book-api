@@ -26,10 +26,10 @@
 /JessiSchool/blob/main/images/student_api_full_page.png">View Demo</a>
     ·
     <a href="https://github.com//Jessica-ovabor
-/JessiSchool/issues">Report Bug</a>
+/book-api/issues">Report Bug</a>
     ·
     <a href="https://github.com/Jessica-ovabor
-/JessiSchool/issues">Request Feature</a>
+/book-api/issues">Request Feature</a>
   </p>
 </div>
 
@@ -40,12 +40,12 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-student-api">About Student Management API</a>
+      <a href="#about-book-api">About Book API</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#knowledge-acquired">Knowledge Acquired</a></li>
+    <li><a href="#technology">Technology</a></li>
     <li><a href="#project-scope">Project Scope</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#installaton">Installation</a></li>
@@ -60,40 +60,36 @@
 ---
 
 <!-- About the Project -->
-## About JessiSchool
+## About Book Api
 
-JessiSchool is a Student Management API does the main function of a university system and explains how it works. It enables the school to create an admin account. It allows the registration of students by admin. Also, the API allows the school admin to create courses and handling the grading system for the student and student cgpa on a scale of 4.0.
+Book API is a simple API built with FAST Api that in which perform a simple CRUD operation for user to update a book by id , create a book with the required paraameters like title, year etc , delete a book by its id , get a book by its id and get all books present in the database.
 
-CRUD operations can be carried out on the admin data ,student data and the courses data, with an easy-to-use Swagger UI setup for testing and integration with the front end.
+Also there is an easy-to-use Swagger UI setup for testing in the absence of testing tools like insomnia and postman.
 
-A Student account have restricted access to the app, as a student can only change their profile details and view their profile, courses, grades and CGPA.
 
-This Student Management API was built with Python's Flask-RESTX a python Api by <a href="https://www.github.com/Jessica-ovabor">Jessica Ovabor</a> during Backend Engineering live classes at <a href="https://altschoolafrica.com/schools/engineering">AltSchool Africa</a>. This was built as my third semester final capstone project in <b>AltSchool Africa</b>. 
-
+This Book Api was built with FAST Api by <a href="https://www.github.com/Jessica-ovabor">Jessica Ovabor</a> 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ### Built With:
 
 ![Python][python]
-![Flask][flask]
+![FastAPI][fastapi]
 ![SQLite][sqlite]
+
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ---
 <!-- Lessons from the Project -->
-## Knowledge Acquired
+## Deliverables
 
 Creating this API helped me learn and practice:
-* API Development with Python
-* Unit Testing using Pytest,Insomnia and Postman
+* API Development with FAST Api
+* Unit Testing using Postman
 * Routing
 * Swagger Documentation
 * Debugging
 * Database Management
-* App Security
-* User Authentication and Authorization
-* Flask Admin Permissions and Restriction
 * Deployment
 
 <p align="right"><a href="#readme-top">back to top</a></p>
@@ -102,27 +98,14 @@ Creating this API helped me learn and practice:
 <!-- What the API can do -->
 ## Project Scope
 
-The Student Management API handles the following:
-* Admin Registration
-* Admin Authentication and Authorisations
-* Admin CRUD operation
-* Student Registration-Admins
-* Student Authentication and Authorisations
-* Getting Student Information and applying the CRUD operation
-* Course Creation-course units
-* Getting a Course details and using the CRUD operation
-* Multiple Course Registration for Students
-* Assigning a Teacher to a course
-* Get all Availaible Course in the School-Any signed in user
-* List the Total enrollment to a Course
-* Removing a Student from a Course
-* Adding a Student Score and Letter Grade
-* Calculating a Student CGPA using the 4.0 Grading System.
-* Retrieve all registered student or admin in the school
-* Specifying Usertype -'admin' or'student'
-* Assigning a unique matric_no to student which is a combination of the school name,the course(PYT), and id as of when the student registered n the portal of the format-ALT/PYT/0001
+The Book API handles the following:
+* Create a new book
+* Get a new book by ID
+* Get all books
+* Update book by ID
+* Delete book by ID
 
-The future Versions will cover payment ,statement of result and features as needed soon.
+
 
 ---
 
@@ -131,9 +114,9 @@ The future Versions will cover payment ,statement of result and features as need
 
 To explore and use this API, follow these steps:
 
-1. Open the web app on your browser: https://jovabor.pythonanywhere.com/
+1. Open the web app on your browser: https://githu.com/Jessica-ovabor/book-api
 
-2. Create an admin account:
+2. Create an  account:
    - Click 'auth' to reveal a dropdown menu of the authentication routes, then register an admin account via the '/auth/register/admin' route. Input your details and a type 'admin' will be assigned. to create an admin account.
  Create a student account:
    - Click 'student' to reveal a dropdown menu of the authentication routes, then register an admin account via the '/student/register' route. Input your details and a type 'student' will be assigned.
@@ -223,57 +206,20 @@ python runserver.py
 
 | ROUTE                          | METHOD | DESCRIPTION                                   | AUTHORIZATION          | USER TYPE |
 |--------------------------------| ------ |-----------------------------------------------|------------------------|-----------|
-| `/auth/register/admin`         | _POST_ |  Creation of admin account                    |     `None`             | Admin     |
-| `/auth/login`                  | _POST_ | Creation of JWT Tokens for  admin             |     `None`             | Admin     |
-| `/auth/refresh`                | _POST_ | Creation of Access Tokens for all account     | `Bearer Refresh-Token` | Admin     |
-| `/auth/logout`                 | _POST_ | LogOut User and revoke access/refresh tokens  | `Bearer Access-Token`  | Admin     |
-| `/auth/admin`                  | _GET_  |  Get all registered user- admin and student   |  `Bearer Access-Token` | Admin     |
-| `/auth/admin/admin_id`         | _DEL_  |  Delete an admin                              |   `Bearer Access-Token`| Admin     |
+| `/create/books/`               | _POST_ |  Creation of books                            |     `None`             | Any       |
+| `/get/books/id`                | _GET_  |  Get books by ID                              |    `None`              | Any       |
+| `/get/books/  `                | _GET_  |  Get All Books                                |    `None`              | Any       |  
+| `/delete/books/id`             | _DEL_  |  Deletion of books                            |     `None`             | Any       |
+| `/update/books/id`             | _PUT_  |  Update books by ID                           |    `None`              | Any       |
 
 
 
-<div style="margin-top:20px; margin-bottom:10px; font-size:20px; font-weight:bold;">Student EndPoint</div>
-
-| ROUTE                          | METHOD | DESCRIPTION                                   | AUTHORIZATION          | USER TYPE |
-|--------------------------------| ------ |-----------------------------------------------|------------------------|-----------|
-| `/student/register`            | _POST_ | Creation of student account by admin          |     `None`             | Admin     |
-| `/student/login`               | _POST_ | Creation of JWT Tokens for  student           |     `None`             | Student   |
-| `/student/refresh`             | _POST_ | Creation of Access Tokens for all account     | `Bearer Refresh-Token` | Student   |
-| `/student/logout`              | _POST_ | LogOut User and revoke access/refresh tokens  | `Bearer Access-Token`  | Student   |
-| `/student/student_id`          | _PUT_  | Update a student detail                       |  `Bearer Access-Token` | Student   |
-| `/student/student_id`          | _GET_  | Get a student detail by admin or student      |  `Bearer Access-Token` |  Any      |
-| `/student/student_id`          | _DEL_  | Delete a student detail by admin              |  `Bearer Access-Token` |  Admin    |
-| `/student/grades/grades_id`    | _PUT_  | Update a student grade by admin               |  `Bearer Access-Token` |  Admin    |
-| `/student/grades/grades_id`    | _DEL_  | Delete a student grade by admin               |  `Bearer Access-Token` |  Admin    |
-| `/student/student_id/grades`   | _POST_ | Upload a student grade in a course            |  `Bearer Access-Token` |   Admin   |
-| `/student/student_id/grades`   | _GET_  | Retrieve  a student grade in a course         |  `Bearer Access-Token` |   Any     |
-| `/student/student_id/courses`  | _GET_  | Retrieve a student course                     |  `Bearer Access-Token` |   Any     |
-| `/student/student_id/cgpa`     | _GET_  | Calculate a student cgpa                      |  `Bearer Access-Token` |   Any     |
-
-
-<div style="margin-top:20px; margin-bottom:10px; font-size:20px; font-weight:bold;">Courses EndPoint</div>
-
-| ROUTE                          | METHOD | DESCRIPTION                                   | AUTHORIZATION          | USER TYPE |
-|--------------------------------| ------ |-----------------------------------------------|------------------------|-----------|
-| `/course`                      | _GET_  | Get all courses in school                     |  `Bearer Access-Token` |   Any     |
-| `/course/register`             | _POST_ | Register a student to a course                |  `Bearer Access-Token` |   Admin   |
-| `/course/course_id/enrolled`   | _GET_  | Get the total number of enrollment to a course|  `Bearer Access-Token` |   Admin   |
-| `/course/student_id/courses`   | _GET_  | Get tudent courses                            |  `Bearer Access-Token` |   Any     |
 
 
 
 ---
 
-<!-- Sample Screenshot -->
-## Sample
 
-<br />
-
-![JessiSchool](https://user-images.githubusercontent.com/74324460/226197363-ea88c83a-539e-4c28-baaa-f448c17fdc32.png)
-![JessiSchool](https://user-images.githubusercontent.com/74324460/226197365-960c2d2a-fc65-4d97-b179-faf373e1c0e4.png)
- 
-
-<br/>
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -295,19 +241,13 @@ You can contact me with my social media handles:
 
 [LinkedIn](https://www.linkedin.com/in/jovabor) | [Twitter](https://twitter.com/jovabor) | [Github](https://github.com/Jessica-ovabor) | Email: ovaborjessica85@gmail.com
 
-Project Link: [JessiSchool](https://github.com/Jessica-ovabor/JessiSchool)
+Project Link: [JessiSchool](https://github.com/Jessica-ovabor/book-api)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ---
 
-<!-- Acknowledgements -->
-## Acknowledgements
 
-This project was made possible by:
-
-* [AltSchool Africa School of Engineering](https://altschoolafrica.com/schools/engineering)
-* [Caleb Emelike](https://github.com/CalebEmelike)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
