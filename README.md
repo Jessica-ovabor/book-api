@@ -46,16 +46,6 @@
       </ul>
     </li>
 
-    <li><a href="#project-scope">Project Scope</a></li>
-    <li><a href="#built-with">Technology</a></li>
-    <li><a href="#deliverables">Deliverables</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#installaton">Installation</a></li>
-    <li><a href="#component">Component</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-
   </ol>
   <p align="right"><a href="#readme-top">back to top</a></p>
 </details>
@@ -76,7 +66,7 @@ This Book Api was built with FAST Api by <a href="https://www.github.com/Jessica
 ### Built With:
 
 ![Python][python]
-![FastMApi][fastapi]
+![FastApi][fastapi]
 ![SQLite][sqlite]
 
 
