@@ -42,6 +42,7 @@
       <a href="#about-book-api">About Book API</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#deliverables">Deliverables</a></li>
       </ul>
     </li>
 
