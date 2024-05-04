@@ -65,7 +65,7 @@ This Book Api was built with FAST Api by <a href="https://www.github.com/Jessica
 ### Built With:
 
 ![Python][python]
-![FASTApi][fastapi]
+![FastApi][fastapi]
 ![SQLite][sqlite]
 
 
