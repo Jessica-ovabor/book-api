@@ -43,6 +43,12 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#deliverables">Deliverables</a></li>
+        <li><a href="#components">Components</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#endpoints">Endpoint</a></li>
+        <li><a href="#license">License/a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </li>
 
