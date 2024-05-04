@@ -120,35 +120,16 @@ To explore and use this API, follow these steps:
 1. After cloning and making sure the app is running click on the url and add / docs to it : example (http://127.0.0.1:8000/docs)
 
 2. Create a new book:
-   - Click '/create/books' to reveal a dropdown menu of the authentication routes, then register an admin account via the '/auth/register/admin' route. Input your details and a type 'admin' will be assigned. to create an admin account.
- Create a student account:
-   - Click 'student' to reveal a dropdown menu of the authentication routes, then register an admin account via the '/student/register' route. Input your details and a type 'student' will be assigned.
-  
-3.  Login a Student or Admin account:
-    -Login via the '/auth/login' route to generate a JWT token. Copy the access token only without the quotation marks- to login an admin
-    -Login via the '/student/login' route to generate a JWT token. Copy the access token only without the quotation marks- to login a student
+   - Click '/create/books' to create a new book
+3. Get New Book By ID
+   -  Click '/get/books/id
+4. Get list of Books
+   - Click on '/get/books/'
+5. Update Books By ID
+   - Click on '/update/books/id'
+6.  Delete Books By ID
+    - Click on '/delete/books/id'
 
-4. Scroll back up to click <b>Authorize</b> at top right. Enter the JWT token in the given format, for example:
-   ```
-   Bearer eyJhbtestXVCJ9.eyJbmMzd9.this_rQh8_tl2V1iDlsl_wAOMHcing5334
-   ```
-
-5. Click <b>Authorize</b> and then <b>Close</b>.
-
-6. Now authorized, you can create, view, update and delete students, courses and grades via the routes in <b>'students'</b> and **'courses'**. You can also see the information about:
-    - All students taking a course
-    - All courses taken by a student
-    - A student's grades in percentage (example: 84.0) and letters (eg: B+)
-    - A student's GPA, calculated using the 4.0 grading system based on all grades from all courses they are taking (example: 3.3)
-    - All courses available in the school
-   
-7. Go to the **Course** Namespace and create a new course before adding a student to the course
-
-8. Then go on ahead to perform other operations and test all the routes. <b>_Enjoy!_</b>
-
-9. When you're done, click 'Authorize' at top right again to then 'Logout'. Also, head on to the **'/auth/logout'** route to log the user out and revoke the access token.
-
-**Note:** Any registered user can request to update their details via **'/student/student_id'** route- input your id when your account was created
   
 
 <p align="right"><a href="#readme-top">back to top</a></p>
@@ -253,8 +234,7 @@ Project Link: [JessiSchool](https://github.com/Jessica-ovabor/book-api)
 [contributors-url]: https://github.com/Oluwatemmy/Student-Management-API/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Oluwatemmy/Student-Management-API.svg?style=for-the-badge
 [forks-url]: https://github.com/Oluwatemmy/Student-Management-API/network/members
-[stars-shield]: https://img.shields.io/github/stars/Oluwatemmy/Student-Management-API.svg?style=for-the-badge
-[stars-url]: https://github.com/Oluwatemmy/Student-Management-API/stargazers
+[stars-url]: https://github.com/Oluwatemmy/book-api/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Jessica-ovabor/JessiSchool.svg?style=for-the-badge
 [issues-url]: https://github.com/Jessica-ovabor/JessiSchool/issues
 [license-shield]: https://img.shields.io/github/license/Jessica-ovabor/JessiSchool.svg?style=for-the-badge
